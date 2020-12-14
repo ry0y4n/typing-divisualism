@@ -1,43 +1,44 @@
 <template>
-  <div>
-    <h2>{{ this.totalText }}</h2>
+  <div class="container">
+    <!-- <div>
+      <vue-typed-js :strings="this.$store.state.badTextDiff" :smart-backspace="true">
+        <h1 class="typing" />
+      </vue-typed-js>
+      <vue-typed-js :strings="this.$store.state.goodTextDiff">
+        <h1 class="typing" />
+      </vue-typed-js>
+      <vue-typed-js :strings="this.$store.state.weirdTextDiff">
+        <h1 class="typing" />
+      </vue-typed-js>
+    </div> -->
+    <!-- <h2>{{ this.totalText }}</h2>
     <h3>{{ this.totalTextDiff }}</h3>
     <h3>{{ this.trimTextDiff }}</h3>
     <h2>{{ this.$store.state.badTextDiff }}</h2>
     <h2>{{ this.$store.state.goodTextDiff }}</h2>
     <h2>{{ this.$store.state.weirdTextDiff }}</h2>
     <h3>{{ this.$store.state.badTextDiff }}</h3>
-    <h3>{{ this.trimBadText }}</h3>
-    <vue-typed-js :strings="this.$store.state.badTextDiff" :smart-backspace="true">
+    <h3>{{ this.trimBadText }}</h3> -->
+
+    <!-- <vue-typed-js :strings="this.totalText">
       <h1 class="typing" />
-    </vue-typed-js>
-    <vue-typed-js :strings="['よ','よr', 'より', 'よりs','より', 'よ', 'よr', 'よろ','よろし', 'よろしく']" :smart-backspace="true">
+    </vue-typed-js> -->
+    <!-- <vue-typed-js :strings="[this.trimBadText]" :smart-backspace="true">
       <h1 class="typing" />
-    </vue-typed-js>
-    <vue-typed-js :strings="this.$store.state.goodTextDiff">
-      <h1 class="typing" />
-    </vue-typed-js>
-    <vue-typed-js :strings="this.$store.state.weirdTextDiff">
-      <h1 class="typing" />
-    </vue-typed-js>
-    <vue-typed-js :strings="this.totalText">
-      <h1 class="typing" />
-    </vue-typed-js>
-    <vue-typed-js :strings="[this.trimBadText]" :smart-backspace="true">
-      <h1 class="typing" />
-    </vue-typed-js>
+    </vue-typed-js> -->
     <vue-typed-js :strings="[this.trimText]" :smart-backspace="true">
       <h1 class="typing" />
     </vue-typed-js>
-    <vue-typed-js :strings="[this.trimTextDiff]" :smart-backspace="true">
+
+    <!-- <vue-typed-js :strings="[this.trimTextDiff]" :smart-backspace="true">
       <h1 class="typing" />
-    </vue-typed-js>
-    <vue-typed-js :strings="this.message" :smart-backspace="true">
+    </vue-typed-js> -->
+    <!-- <vue-typed-js :strings="this.message" :smart-backspace="true">
       <h1 class="typing" />
     </vue-typed-js>
     <vue-typed-js :strings="['This is momosuke', 'This is モモスケ']" :smart-backspace="true">
       <h1 class="typing" />
-    </vue-typed-js>
+    </vue-typed-js> -->
   </div>
 </template>
 <script>
@@ -115,6 +116,11 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
-
+<style lang="scss">
+.container {
+  h1 {
+    font-size: 2vw;
+  }
+  padding: 150px 30px 150px;
+}
 </style>

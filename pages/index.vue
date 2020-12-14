@@ -3,7 +3,7 @@
     <div class="shutter"></div>
     <div class="container">
       <div>
-        <vue-typed-js :strings="['^2000IVISUALISM']" :type-speed="200" :show-cursor="false">
+        <vue-typed-js :strings="['^2000IVISUALISM']" :type-speed="100" :show-cursor="false">
           <h1 class="title">
             D<span class="typing" />
           </h1>
@@ -292,7 +292,7 @@ export default Vue.extend({
     width: 100%;
   }
   textarea::placeholder {
-    color: #FCE2B1;
+    color: #FAFAFA;
   }
   textarea::-webkit-resizer {
       display: none;
